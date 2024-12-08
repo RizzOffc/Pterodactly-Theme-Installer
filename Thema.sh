@@ -13,17 +13,17 @@ display_welcome() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
-  echo -e "${BLUE}[+]                  © SKYZOPEDIA                [+]${NC}"
+  echo -e "${BLUE}[+]                  © RizzHosting                [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
   echo -e ""
   echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
   echo -e "Dilarang Keras Share Bebas."
   echo -e ""
-  echo -e "𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 :"
-  echo -e "@skyzodev"
+  echo -e "Tiktok :"
+  echo -e "@Rizz"
   echo -e "𝗖𝗥𝗘𝗗𝗜𝗧𝗦 :"
-  echo -e "@skyzopedia"
+  echo -e "@RizzHosting"
   sleep 4
   clear
 }
@@ -56,20 +56,20 @@ install_jq() {
 check_token() {
   echo -e "                                                       "
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
-  echo -e "${BLUE}[+]               LICENSY RAFATHAR CODE            [+]${NC}"
+  echo -e "${BLUE}[+]               LICENSY RIZZ HOSTING              [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "skyzodev" ]; then
+  if [ "$USER_TOKEN" = "rizzhosting" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Token Salah! Beli Kode Token Di Skyzopedia${NC}"
     echo -e "${YELLOW}TELEGRAM : @skyzodev${NC}"
     echo -e "${YELLOW}WHATSAPP : +6285624297893${NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
-    echo -e "${YELLOW}© Skyzopedia${NC}"
+    echo -e "${YELLOW}© RizzHosting${NC}"
     exit 1
   fi
   clear
@@ -455,9 +455,9 @@ while true; do
   echo -e "${RED}',gg       ,ggg.      'ggg:                               ${NC}"
   echo -e "${RED}'ggg      ,gg'''  .    ggg       Auto Installer Skyzopedia   ${NC}"
   echo -e "${RED}gggg      gg     ,     ggg      ------------------------  ${NC}"
-  echo -e "${RED}ggg:     gg.     -   ,ggg       • Telegram : Skyzopedia      ${NC}"
-  echo -e "${RED} ggg:     ggg._    _,ggg        • Creadit  : Skyzopedia  ${NC}"
-  echo -e "${RED} ggg.    '.'''ggggggp           • Support by Skyzopedia  ${NC}"
+  echo -e "${RED}ggg:     gg.     -   ,ggg       • Tiktok : Rizz          ${NC}"
+  echo -e "${RED} ggg:     ggg._    _,ggg        • Creadit  : Rizz Hosting ${NC}"
+  echo -e "${RED} ggg.    '.'''ggggggp           • Support by Rizz Hosting  ${NC}"
   echo -e "${RED}  'ggg    '-.__                                           ${NC}"
   echo -e "${RED}    ggg                                                   ${NC}"
   echo -e "${RED}      ggg                                                 ${NC}"
