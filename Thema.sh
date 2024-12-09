@@ -453,7 +453,7 @@ while true; do
   echo -e "${RED}  ,ggggg        gggggggg.                                 ${NC}"
   echo -e "${RED} ,ggg'               'ggg.                                ${NC}"
   echo -e "${RED}',gg       ,ggg.      'ggg:                               ${NC}"
-  echo -e "${RED}'ggg      ,gg'''  .    ggg       Auto Installer Skyzopedia   ${NC}"
+  echo -e "${RED}'ggg      ,gg'''  .    ggg       Auto Installer Rizz Hosting   ${NC}"
   echo -e "${RED}gggg      gg     ,     ggg      ------------------------  ${NC}"
   echo -e "${RED}ggg:     gg.     -   ,ggg       • Tiktok : Rizz          ${NC}"
   echo -e "${RED} ggg:     ggg._    _,ggg        • Creadit  : Rizz Hosting ${NC}"
