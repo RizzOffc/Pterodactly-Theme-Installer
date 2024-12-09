@@ -65,9 +65,9 @@ check_token() {
   if [ "$USER_TOKEN" = "rizzhosting" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
-    echo -e "${GREEN}Token Salah! Beli Kode Token Di Skyzopedia${NC}"
-    echo -e "${YELLOW}TELEGRAM : @skyzodev${NC}"
-    echo -e "${YELLOW}WHATSAPP : +6285624297893${NC}"
+    echo -e "${GREEN}Token Salah! Beli Kode Token Di Rizz Hosting${NC}"
+    echo -e "${YELLOW}TELEGRAM : @RizzHosting${NC}"
+    echo -e "${YELLOW}WHATSAPP : +6283897845063{NC}"
     echo -e "${YELLOW}HARGA TOKEN : 25K FREE UPDATE JIKA ADA TOKEN BARU${NC}"
     echo -e "${YELLOW}© RizzHosting${NC}"
     exit 1
