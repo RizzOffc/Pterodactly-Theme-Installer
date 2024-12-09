@@ -530,4 +530,18 @@ while true; do
       6)
       install_themeSteeler
       ;;
-    
+      7)
+      hackback_panel
+      ;;
+      8)
+      ubahpw_vps
+      ;;
+    x)
+      echo "Keluar dari skrip."
+      exit 0
+      ;;
+    *)
+      echo "Pilihan tidak valid, silahkan coba lagi."
+      ;;
+  esac
+done
