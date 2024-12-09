@@ -12,7 +12,7 @@ display_welcome() {
   echo -e ""
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${BLUE}[+]                AUTO INSTALLER THEMA             [+]${NC}"
+  echo -e "${BLUE}[+]                AUTO INSTALLER             [+]${NC}"
   echo -e "${BLUE}[+]                  © RizzHosting                [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
   echo -e "${RED}[+] =============================================== [+]${NC}"
@@ -84,23 +84,28 @@ install_theme() {
     echo -e "${BLUE}[+] =============================================== [+]${NC}"
     echo -e "                                                       "
     echo -e "PILIH THEME YANG INGIN DI INSTALL"
-    echo "1. stellar"
-    echo "2. billing"
-    echo "3. enigma"
+    echo "1. Stellar"
+    echo "2. Billing"
+    echo "3. Enigma"
+    echo "4. Nook"
     echo "x. kembali"
     echo -e "masukan pilihan (1/2/3/x) :"
     read -r SELECT_THEME
     case "$SELECT_THEME" in
       1)
-        THEME_URL=$(echo -e "https://github.com/SkyzoOffc/Pterodactyl-Theme-Autoinstaller/raw/main/stellar.zip")        
+        THEME_URL=$(echo -e "https://github.com/RizzOffc/Pterodactly-Theme-Installer/raw/main/stellar.zip")        
         break
         ;;
       2)
-        THEME_URL=$(echo -e "https://github.com/SkyzoOffc/Pterodactyl-Theme-Autoinstaller/raw/main/billing.zip")
+        THEME_URL=$(echo -e "https://github.com/RizzOffc/Pterodactly-Theme-Installer/raw/main/billing.zip")
         break
         ;;
       3)
-        THEME_URL=$(echo -e "https://github.com/SkyzoOffc/Pterodactyl-Theme-Autoinstaller/raw/main/enigma.zip")
+        THEME_URL=$(echo -e "https://github.com/RizzOffc/Pterodactly-Theme-Installer/raw/main/enigma.zip")
+        break
+        ;; 
+      4)
+        THEME_URL=$(echo -e "https://github.com/RizzOffc/Pterodactly-Theme-Installer/raw/main/NookTheme-theme-1.3.1-1.11.9.zip")
         break
         ;; 
       x)
@@ -162,6 +167,33 @@ elif [ "$SELECT_THEME" -eq 2 ]; then
   yarn build:production
   php artisan view:clear
   sudo rm /root/billing.zip
+  sudo rm -rf /root/pterodactyl
+
+  echo -e "                                                       "
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "${GREEN}[+]                  INSTALL SUCCESS                [+]${NC}"
+  echo -e "${GREEN}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sleep 2
+  clear
+  return
+  
+elif [ "$SELECT_THEME" -eq 4 ]; then
+  echo -e "                                                       "
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "${BLUE}[+]                  INSTALLASI THEMA               [+]${NC}"
+  echo -e "${BLUE}[+] =============================================== [+]${NC}"
+  echo -e "                                                       "
+  sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
+  curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+  sudo apt install -y nodejs
+  sudo npm i -g yarn
+  cd /var/www/pterodactyl
+  yarn add react-feather
+  php artisan migrate
+  yarn build:production
+  php artisan view:clear
+  sudo rm /root/NookTheme-theme-1.3.1-1.11.9.zip
   sudo rm -rf /root/pterodactyl
 
   echo -e "                                                       "
@@ -498,18 +530,4 @@ while true; do
       6)
       install_themeSteeler
       ;;
-      7)
-      hackback_panel
-      ;;
-      8)
-      ubahpw_vps
-      ;;
-    x)
-      echo "Keluar dari skrip."
-      exit 0
-      ;;
-    *)
-      echo "Pilihan tidak valid, silahkan coba lagi."
-      ;;
-  esac
-done
+    
