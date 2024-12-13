@@ -12,12 +12,12 @@ display_welcome() {
   echo -e ""
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${BLUE}[+]                AUTO INSTALLER             [+]${NC}"
-  echo -e "${BLUE}[+]                  © RizzHosting                [+]${NC}"
+  echo -e "${BLUE}[+]                AUTO INSTALLER PANEL             [+]${NC}"
+  echo -e "${BLUE}[+]                  © RizzHosting                  [+]${NC}"
   echo -e "${BLUE}[+]                                                 [+]${NC}"
-  echo -e "${RED}[+] =============================================== [+]${NC}"
+  echo -e "${RED}[+] ===============================================  [+]${NC}"
   echo -e ""
-  echo -e "script ini di buat untuk mempermudah penginstalasian thema pterodactyle,"
+  echo -e "Script Ini Di Buat Untuk Mempermudah Penginstalasian Thema Pterodactyle,"
   echo -e "Dilarang Keras Share Bebas."
   echo -e ""
   echo -e "Tiktok :"
@@ -62,7 +62,7 @@ check_token() {
   echo -e "${YELLOW}MASUKAN AKSES TOKEN :${NC}"
   read -r USER_TOKEN
 
-  if [ "$USER_TOKEN" = "rizzhosting" ]; then
+  if [ "$USER_TOKEN" = "rizzdev" ]; then
     echo -e "${GREEN}AKSES BERHASIL${NC}}"
   else
     echo -e "${GREEN}Token Salah! Beli Kode Token Di Rizz Hosting${NC}"
